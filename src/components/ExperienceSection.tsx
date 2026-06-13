@@ -1,4 +1,4 @@
-import { Award, BriefcaseBusiness, GraduationCap } from 'lucide-react';
+import { Award, Briefcase, GraduationCap } from 'lucide-react';
 import FadeIn from './FadeIn';
 
 const EXPERIENCE = [
