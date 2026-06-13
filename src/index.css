@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0C0C0C;
+  --fg: #F0EDE8;
+  --accent: #7C6AF7;
+  --accent2: #C084FC;
+  --muted: #6B7280;
+  --card: #141414;
+  --border: #1F1F1F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.hero-heading {
+  background: linear-gradient(135deg, #F0EDE8 0%, #C084FC 40%, #7C6AF7 70%, #F0EDE8 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 6s ease infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.research-tag {
+  background: linear-gradient(135deg, rgba(124, 106, 247, 0.15), rgba(192, 132, 252, 0.15));
+  border: 1px solid rgba(124, 106, 247, 0.3);
+}
